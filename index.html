@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="dist/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <div style="position: relative;">
+
+            <div class="form">
+                <div>
+                    <h1>
+                        Fill The Form
+                    </h1>
+                    <p>Donnut worry !! your privacy is our top priority :)</p>
+                </div>
+                <div style="display: flex; gap: 72px;    justify-content: start;
+                align-items: start; ">
+
+                    <form id="myForm" style="display: flex; flex-direction: column; gap: 12px;">
+                        <label for="idInput">Enter your Id:</label>
+                        <input type="text" id="idInput">
+                        <label for="nameInput">Enter your name:</label>
+                        <input type="text" id="nameInput">
+                        <label for="genderInput">Choose you Gender</label>
+                        <select name="genderInp ut" id="genderInput">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <img class="mascott" src="mascott.png" alt="mascott">
+
+        </div>
+        <Footer style="display: flex; justify-content: center; align-items: center;">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <p style="text-align: center;">👨‍💻 Created by FigoMager <br> ⚡ Powered by <strong
+                        style="color: rgb(42, 111, 239);">Typescript</strong> </p>
+                <p style="text-align: center;"></p>
+            </div>
+        </Footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(55, 32, 91);
+}
+
+.form-container {
+    position: relative; /* add this line to make the mascot relative to the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.form {
+    position: relative; /* add this line to make the form relative to the container */
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 82px;
+    background: white;
+}
+
+.mascott {
+    position: absolute;
+    top: -260px;
+    height: 380px;
+    right: 2px;
+    z-index: 0; /* change the z-index to a lower value than the form container */
+    
+}
+
+input[type=text] {
+    border: rgb(176, 176, 176) solid 1px;
+    border-radius: 4px;
+    padding: 6px;
+    background-color: white;
+    transition: ease-in-out 0.4s;
+}
+
+input[type=text]:hover {
+    background-color: rgb(215, 224, 255);
+}
+
