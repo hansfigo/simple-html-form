@@ -35,7 +35,8 @@ body {
     
 }
 
-input[type=text] {
+
+input, select {
     border: rgb(176, 176, 176) solid 1px;
     border-radius: 4px;
     padding: 6px;
@@ -43,7 +44,7 @@ input[type=text] {
     transition: ease-in-out 0.4s;
 }
 
-input[type=text]:hover {
+input:hover {
     background-color: rgb(215, 224, 255);
 }
 

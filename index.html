@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="form-container">
+    <div class="form-container">    
         <div style="position: relative;">
 
             <div class="form">
@@ -30,34 +30,63 @@
                 align-items: start; ">
 
                     <form id="myForm" style="display: flex; flex-direction: column; gap: 12px;">
-                        <label for="idInput">Enter your Id:</label>
-                        <input type="text" id="idInput">
-                        <label for="nameInput">Enter your name:</label>
+                        <label for="nameInput">Name:</label>
                         <input type="text" id="nameInput">
-                        <label for="genderInput">Choose you Gender</label>
-                        <select name="genderInp ut" id="genderInput">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+
+                        <label for="idInput">Student Id:</label>
+                        <input type="text" id="idInput">
+
+                        <label for="yearInput">Year</label>
+                        <input type="number" id="yearInput">
+
+                        <label for="emailInput">Email</label>
+                        <input type="email" id="emailInput">
+
+                        <label for="passwordInput">Password</label>
+                        <input type="password" id="passwordInput">
+
+                        <label for="dateBirth">Date of Birth</label>
+                        <input type="date" id="dateBirth">
+
+                        <label for="photo">Upload Your Photo</label>
+                        <input type="file" id="photo">
+
+                        <label for="religionInput">Religion</label>
+                        <select name="religionInput" id="religionInput">
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katholik">Katholik</option>
+                            <option value="hindu">Hindu</option>
                         </select>
+                        <label for="genderInput">Gender</label>
+                        <div>
+                              <input type="radio" id="html" name="fav_language" value="HTML">
+                              <label for="html">Female</label><br>
+                              <input type="radio" id="html" name="fav_language" value="HTML">
+                              <label for="html">Male</label><br>
+                        </div>
+                        
+                        
                         <button type="submit">Submit</button>
                     </form>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Name</th>
-                                <th>Gender</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
+               
                 </div>
             </div>
 
             <img class="mascott" src="mascott.png" alt="mascott">
 
         </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
         <Footer style="display: flex; justify-content: center; align-items: center;">
             <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                 <p style="text-align: center;">👨‍💻 Created by FigoMager <br> ⚡ Powered by <strong
